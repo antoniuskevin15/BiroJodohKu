@@ -1,6 +1,7 @@
 {
   "name": "AntoniusKevin_00000045444_IF670_A_UTS",
   "version": "0.0.1",
+  "homepage": "http://antoniuskevin15.github.io/BiroJodohKu",
   "private": true,
   "dependencies": {
     "@capacitor/app": "4.0.1",
@@ -19,6 +20,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "gh-pages": "^4.0.0",
     "ionicons": "^6.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,7 +46,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
